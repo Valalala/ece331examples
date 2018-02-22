@@ -1,0 +1,32 @@
+# Notes from class 
+# Makefile
+# variables
+# recipes
+# targets
+
+#: - indicates dependency
+
+# TARGET = dsp
+# CFLAGS = -Wall -g
+# CC = gcc
+# OBJS = main.o spr.o fir.o
+# LIBS = -lm -Lx -lxyz
+#
+# ${TARGET}: ${OBJS} 				# Complie
+# 	${CC} -o ${TARGET} ${OBJS} ${LIBS}	# Link
+#
+# clean
+# 	-rm -f ${TARGET} ${OBJS}
+
+
+# .p - pascal
+# .c - c
+# .s - assembly
+# .f - fortran
+# .F - fortran with pre processing
+# .cpp - c pre processer
+# .cc - c++
+
+# libm.so - math library , .so = shared
+
+
