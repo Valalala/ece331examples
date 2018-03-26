@@ -1,0 +1,17 @@
+ps apx
+ps agxu
+kill -l
+od -t x1z forking.c
+man wait
+
+gcc -Wall -g -o fork forking.c
+!gcc //// does previous gcc
+
+cd /proc
+ls
+cat cmdline
+
+man errno
+
+
+
