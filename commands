@@ -13,5 +13,69 @@ cat cmdline
 
 man errno
 
+ll /dev/ttyACM0
+more /etc/minicom.minicomrc.acm0
+
+minicom -o acm0
+minicom -o ama0  //9600
+
+sudo systemctl stop lighttpd
+sudo systemctl disable lighttpd
+sudo systemctl mask lighttpd
+
+systemctl -a
+
+sudo iptables -L
+
+
+dpkg --get-selections | grep lighttpd
+dpkg --get-selections | grep php
+dphg --get-selections | grep sqlite // perl or python sqlite3
+apt search sqlite3
+apt search perl
+apt search cpan
+cd /etc/lighttpd
+cd conf-available/
+cd ../conf-enabled/
+ls
+vim conf-enabled* //pic
+
+sudo apt install sqlite3
+sqlite3 datadb
+.schema
+select * from data;
+select * from data where pressure>=1000;
+select * from data where pressure>=1000 and temp<=70;
+select * from data where rowid=1;
+.quit
+
+sqlite3 newdb
+create table mike (food text, air real, cash integer);
+.schema
+.tables
+insert into mike values ("carrots",3.1415,-20);
+select * from mike;
+select cash from mike;
+select sum(cash) from mike;
+insert into mike values ("spinnach",3.1415,50);
+select * from mike;
+select sum(cash) from mike where cash<0;
+select sum(cash) from mike;
+.quit
+
+
+sudo systemctl umask lighttpd
+sudo systemctl enable lighttpd
+lighttpd
+
+vim x.php
+apt search sqlite3 | grep php
+dpkg --get-selections | grep php
+dpkg --get-selections | grep php | awk // fancy shit that was way too fast 
+
+
+python
+from __future__ import braces
+
 
 
